@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Pruebas
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/pruebas
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties: # Configuracion adicional
+      hibernate:
+        "[format_sql]": true # Formatea el lenguaje SQL
+
+server:
+  port: 9090
+  servlet:
+    context-path: /api/v1
